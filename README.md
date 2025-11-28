@@ -1,22 +1,10 @@
-# ShipAny
-ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.
-Z-Image.ai is an efficient image generation platform developed by the Tongyi MAI team under Alibaba Group. Powered by its self-developed foundational image generation model with 6 billion parameters, it focuses on three core advantages—"high performance, high efficiency, and low threshold"—providing users with professional-grade image generation and editing services.
-Core Positioning
-As an open-source and accessible image generation solution, Z-Image breaks the inherent perception that "top-tier performance requires ultra-large model sizes." Through systematic optimization, with only 6 billion parameters, it achieves top-tier capabilities such as photorealistic generation and bilingual text rendering, balancing enterprise-level efficiency with consumer-grade hardware compatibility.
-Key Features
-Photorealistic Generation: Precisely controls image details, lighting, and textures, achieving professional photography-level aesthetics in composition and mood—ideal for product displays, scene restoration, and more.
-Ultra-Fast Inference: Delivers sub-second latency (<1 second) on enterprise-grade H800 GPUs, completing image output in just 8 inference steps to significantly boost creative efficiency.
-Accurate Bilingual Text Rendering: Supports complex Chinese and English text generation, accurately preserving text content while maintaining facial realism and overall visual harmony—solving the common issue of "text distortion" in traditional models.
-Consumer-GPU Friendly: Runs smoothly on consumer-grade graphics cards with ≥16GB VRAM, lowering the hardware barrier for advanced image generation and enabling casual users to access professional features.
-World Knowledge & Semantic Understanding: Equipped with extensive world knowledge and structured reasoning capabilities, it generates reality-compliant images based on common sense and accurately executes complex user instructions.
-Model Variants
-The platform offers two specialized models for diverse use cases:
-Z-Image-Turbo: A lightweight distilled version optimized for photorealistic generation and bilingual text rendering. It matches or outperforms leading competitors in 8 inference steps, suitable for rapid content creation.
-Z-Image-Edit: An advanced variant for image editing. It excels at executing complex instructions for precise local modifications and global style transformations while maintaining edit consistency—perfect for design refinement and creative tweaks.
-Openness & Community Support
-Fully Open-Source: Model code and weights are publicly available, supporting secondary development and research by developers.
-Multi-Platform Access: Offers an interactive online demo ("Try Z-Image Turbo Online") and hosts resources on major AI platforms including GitHub, ModelScope, and HuggingFace for easy trial and deployment.
-Researcher & Community-Focused: Provides technical support for researchers and developers, aiming to advance the development of "low-cost, high-performance" generative AI models.
-Application Scenarios
-Covers commercial creation (product images, advertising materials), creative design (stylized images, text effects), content editing (image modifications, scene adjustments), and more. It meets both enterprise-level efficient production needs and individual users' creative expression requirements.
+# Z-Image
+Z-Image.ai is a groundbreaking open-source AI image generation model developed by Alibaba’s Tongyi MAI team, engineered to shatter the "bigger = better" myth dominating generative AI. With just 6 billion parameters—1/5 the size of heavyweights like Flux 2—it delivers photo-realistic quality, sub-second speed, and precise text rendering, all while running smoothly on 16GB consumer GPUs (e.g., RTX 30 series).
+At its core lies a Single-Stream Diffusion Transformer (DiT) architecture, a radical simplification of traditional multi-path designs. By unifying text instructions, image embeddings, and noisy latents into one sequence for Transformer processing, it eliminates redundant information flow—enabling it to outperform larger models in both quality and efficiency. In human-preference tests (AI Arena Elo ratings), it leads open-source rivals and holds its own against top closed commercial tools.
+Key strengths set it apart:
+Blistering speed: 8-step sampling lets Z-Image-Turbo (its distilled variant) generate 20 images in the time Flux 2 takes for 1—sub-second on H800 GPUs, smooth on consumer hardware.
+Text mastery: Solves a longstanding pain point with crisp, readable Chinese + English rendering—critical for logos, posters, or multilingual content, even in small fonts or complex backgrounds.
+Dual specialization: Z-Image-Turbo for real-time generation (prototyping, e-commerce) and Z-Image-Edit for precise edits (style shifts, text replacement) maintain consistency without artifacts.
+Full openness: Code, weights, and docs are free on GitHub/Hugging Face, empowering developers to fine-tune for niches (e.g., technical diagrams) or integrate into apps without lock-in.
+More than a tool, Z-Image.ai democratizes advanced AI—letting designers, startups, and educators create professionally without data center hardware. It proves efficiency, accessibility, and quality can coexist at the cutting edge of generative AI.
 https://z-image.ai/
